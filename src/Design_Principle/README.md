@@ -17,6 +17,6 @@
 # However , that will be a summary
 # To get detailed insights visit the files where these solid principles are actually implemented
 # Comments are made in the class and interface files to understand how solid design principle actually worked in the project
-
+# Note :- Files are linked to each other
 
 
