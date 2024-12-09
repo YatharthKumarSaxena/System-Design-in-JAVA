@@ -1,8 +1,8 @@
-package SOLID_Design_Principle.main;
+package Design_Principle.SOLID_Design_Principle.main;
 
-import SOLID_Design_Principle.Library_Items.Library_Item;
+import Design_Principle.SOLID_Design_Principle.Library_Items.Library_Item;
 
-// Parent object can be replaced by any of it's child object
+// Parent object can be replaced by any of it's child object in calculateTotalValue function
 // And there is no risk of error
 // Hence Liskov's Substitution Principle is followed here
 

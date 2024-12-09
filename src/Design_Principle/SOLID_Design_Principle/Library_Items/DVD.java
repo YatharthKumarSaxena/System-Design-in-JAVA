@@ -1,4 +1,4 @@
-package SOLID_Design_Principle.Library_Items;
+package Design_Principle.SOLID_Design_Principle.Library_Items;
 
 // Open Closed Principle is followed here
 // Closed Principle is followed here as the library item is implemented by DVD
