@@ -83,3 +83,9 @@ public class UserDatabase {
         return instance;
     }
 }
+
+UserDatabase db1 = UserDatabase.getInstance();
+UserDatabase db2 = UserDatabase.getInstance();
+
+// Check if both objects are the same instance
+System.out.println(db1 == db2); // Output: true (Both point to the same instance)
