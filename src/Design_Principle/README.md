@@ -39,4 +39,4 @@ It’s an acronym that represents **5 key design principles** for building flexi
 | 🔒 **O**      | **Open-Closed Principle (OCP)**         | **Open for extension**, but **closed for modification**. Add new functionality without altering existing code.  |
 | 🔄 **L**      | **Liskov Substitution Principle (LSP)** | Derived classes should be substitutable for their base classes. No unexpected behavior when replacing parent objects with child objects. |
 | ✂️ **I**      | **Interface Segregation Principle (ISP)**| **Don’t force clients to implement unnecessary methods**. Interfaces should have specific, limited purposes. |
-| 🔗 **D**      | **Dependency Inversion Principle (DIP)**| Depend on **abstractions, not concrete implementations**. Th
+| 🔗 **D**      | **Dependency Inversion Principle (DIP)**| Depend on **abstractions, not concrete implementations**.
