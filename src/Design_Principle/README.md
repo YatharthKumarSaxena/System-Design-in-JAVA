@@ -1,22 +1,42 @@
-# This folder is of Design Principles of Low Level Design 
-# This folder consist of the most used and best design principle called SOLID Design Principle
-# But why solid Design Principle , this is because this design principle consist of 5 Design Principles in itself
-# 1.) S :- Single Responsibility Principle
-# 2.) O :- Open Closed Principle
-# 3.) L :- Liskov's Substitution Principle
-# 4.) I :- Interface Segregation Principle
-# 5.) D :- Dependency Inversion Principle
-# To get understanding of how these Principles work , I took a different round
-# Besides understanding it as raw learning that what is s , o , l etc. in SOLID
-# I took a different round , I took a problem statement 
-# Based on the problem statement , I build a mini project 
-# And understood how SOLID Design Principles are implemented to make the code reusable , maintainable and scalable
-# Please check out the Solid_Design_Principle folder
-# Each folder consist of a readme.md file to assist you 
-# This will also explain the key features of the file that in which file what principle of SOLID is followed
-# However , that will be a summary
-# To get detailed insights visit the files where these solid principles are actually implemented
-# Comments are made in the class and interface files to understand how solid design principle actually worked in the project
-# Note :- Files are linked to each other
+# 📘 **Welcome to the Design Principles of Low-Level Design!**
+> **I'm the README.md file of this repo, here to guide you every step of the way!** 🚀
+> 
+> **This folder showcases the most essential and widely-used design principle — the legendary** 🛠️ **SOLID Design Principle** 🛠️
 
+---
 
+## 📂 **What's Inside This Folder?** 📂
+
+This folder demonstrates the **SOLID Design Principles** using a practical, hands-on approach.  
+Here's what you’ll find:
+- 🔍 **Problem Statement** — A real-world problem is used as the foundation for the mini-project.
+- 🏗️ **Mini Project** — A fully functional project where each SOLID principle is applied in the actual code.
+- 📘 **README Files** — Each folder has its own `README.md` file to guide you through the principles applied in that specific folder.
+- 📝 **Comments in Files** — Each class and interface file has **detailed comments** to explain which SOLID principle is used and how it works.
+
+> **Note:** The files are interlinked, demonstrating how different classes, interfaces, and principles work together.
+
+---
+
+## 🔥 **Why SOLID Design Principles?** 🔥
+
+**Why use the SOLID design principles?**  
+Because it promotes **clean code** that's:
+- 🛠️ **Reusable** — Build components that can be used in multiple projects.
+- 🔧 **Maintainable** — Easily fix bugs and make changes without breaking the system.
+- 📈 **Scalable** — Add new features and extend existing ones with minimal effort.
+
+**But what does SOLID stand for?**  
+It’s an acronym that represents **5 key design principles** for building flexible, maintainable, and robust systems.
+
+---
+
+## 📘 **The 5 SOLID Design Principles** 📘
+
+| 🔥 **Letter** | 📘 **Principle**                | 📄 **Explanation**                                      |
+|---------------|---------------------------------|--------------------------------------------------------|
+| 🧱 **S**      | **Single Responsibility Principle (SRP)** | A class should only have **one responsibility**. It should only have one reason to change.  |
+| 🔒 **O**      | **Open-Closed Principle (OCP)**         | **Open for extension**, but **closed for modification**. Add new functionality without altering existing code.  |
+| 🔄 **L**      | **Liskov Substitution Principle (LSP)** | Derived classes should be substitutable for their base classes. No unexpected behavior when replacing parent objects with child objects. |
+| ✂️ **I**      | **Interface Segregation Principle (ISP)**| **Don’t force clients to implement unnecessary methods**. Interfaces should have specific, limited purposes. |
+| 🔗 **D**      | **Dependency Inversion Principle (DIP)**| Depend on **abstractions, not concrete implementations**. Th
