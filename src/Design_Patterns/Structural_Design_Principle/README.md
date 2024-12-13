@@ -8,10 +8,10 @@
 ## 📁 **Folder Structure**
 
 
-📦 Structural_Design_Principle
- ┣ 📂 Adapter_Design_Pattern
- ┣ 📂 Composite_Design_Pattern
- ┣ 📂 Decorator_Design_Pattern
+📦 Structural_Design_Principle    
+ ┣ 📂 Adapter_Design_Pattern     
+ ┣ 📂 Composite_Design_Pattern    
+ ┣ 📂 Decorator_Design_Pattern    
  ┗ 📄 README.md (This file you are currently reading)
 
 
