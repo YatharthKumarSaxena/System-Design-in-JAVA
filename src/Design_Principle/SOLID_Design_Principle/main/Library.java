@@ -19,7 +19,7 @@ public class Library {
         this.items = items;
     }
 
-    // Member Functions
+    // Member Function
 
     public double calculateTotalValue(){
         double totalValue = 0;

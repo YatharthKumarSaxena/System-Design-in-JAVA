@@ -7,6 +7,8 @@ Should have the logic and the control to create Product Objects
  */
 
 public class ProductFactory {
+
+    // Member Function
     public Product createProduct(String category){
         switch(category.toLowerCase()){
             case "electronics" :

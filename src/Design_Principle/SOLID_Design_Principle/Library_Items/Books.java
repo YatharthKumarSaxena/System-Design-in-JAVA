@@ -9,7 +9,7 @@ package Design_Principle.SOLID_Design_Principle.Library_Items;
 
 public class Books implements Library_Item{
 
-    // Private Data Member
+    // Private Data Members
     private String Title;
     private String uniqueId;
     private String author;
@@ -22,6 +22,8 @@ public class Books implements Library_Item{
         this.author = author;
         this.value = value;
     }
+
+    // Member Functions
 
     @Override
     public String getTitle() {

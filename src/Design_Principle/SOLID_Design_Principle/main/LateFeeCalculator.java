@@ -7,6 +7,7 @@ public class LateFeeCalculator {
 
     // Method Takes Interface not the concrete Class as an argument or parameter
 
+    // Member Function
     public double calculateTotalLateFees(LateFeeCalculate[] items,int days){
         double totalLateFee = 0;
         for(LateFeeCalculate item : items){

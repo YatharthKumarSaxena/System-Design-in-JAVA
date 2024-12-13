@@ -6,6 +6,7 @@ package Design_Patterns.Creational_Design_Pattern.Singleton_Design_Pattern.DataA
 
 public class UserDatabase {
 
+    // Data Member
     private static UserDatabase instance;
 
     // Private Default Constructor
@@ -21,6 +22,7 @@ public class UserDatabase {
     // Synchronized Keyword ensures that At a moment only one thread executes the whole entire method
     // This will ensure single instance creation of user database here
 
+    // Member Function
     public static synchronized UserDatabase getInstance(){
         if(instance == null){
             instance = new UserDatabase();

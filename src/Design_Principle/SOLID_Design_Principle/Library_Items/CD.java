@@ -15,7 +15,7 @@ public class CD implements Library_Item{
     String Title;
     // Public Data Member
     public String uniqueId;
-    // Private Data Member
+    // Private Data Members
     private double value;
     private String artist;
 

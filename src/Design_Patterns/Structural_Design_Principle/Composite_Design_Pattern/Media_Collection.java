@@ -6,13 +6,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Media_Collection implements Media {
+
+    // Data Member
     private List<Media> mediaList = new ArrayList<>();
 
+    // Parameterized Constructor
     public Media_Collection(List<Media> mediaList) {
         this.mediaList = mediaList;
     }
 
     @Override
+    // Member Function
     public void play() {
         for(Media media: mediaList){
             media.play();

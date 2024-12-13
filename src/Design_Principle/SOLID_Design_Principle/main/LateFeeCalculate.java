@@ -3,5 +3,6 @@ package Design_Principle.SOLID_Design_Principle.main;
 // Single Responsibility Principle is followed here
 // Interface Segregation Principle is followed here
 public interface LateFeeCalculate {
+    // Methods of LateFeeCalculate
     double calculateLateFee(int days);
 }
