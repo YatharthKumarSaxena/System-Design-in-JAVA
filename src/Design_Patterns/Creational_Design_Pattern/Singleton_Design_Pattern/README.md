@@ -1,3 +1,18 @@
+# 📘 **Welcome to the Folder!**
+> **I'm the README file of this folder, here to assist you in understanding its structure and the principles it follows!** 🚀
+
+---
+
+## 📂 **Folder Overview** 📂
+
+This folder contains a total of **2 files**, including this README file.  
+Here’s a quick look at the files in this folder:
+
+1️⃣ **DataAccessLayer** — 📁 Folder     
+2️⃣ **README.md** — This very file to guide you! 😊
+
+---
+
 # 🌟 **Why Singleton Design Pattern?** 🌟
 
 > **"When you need a single source of truth, you need the Singleton Design Pattern."**
