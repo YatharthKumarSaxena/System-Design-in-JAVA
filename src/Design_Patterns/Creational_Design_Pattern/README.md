@@ -3,17 +3,60 @@
 
 ---
 
-## 🌟 **Key Features of This Project** 🌟
+## 📑 **Table of Contents** 📑
+
+1. [🌟 Key Features](#-key-features)
+2. [📁 Folder Structure](#-folder-structure)
+3. [🧑‍💻 Problem Statement](#-problem-statement)
+4. [🛠️ Core Modules](#-core-modules)
+5. [🌟 Why Creational Design Pattern?](#-why-creational-design-pattern)
+6. [🔥 The Role of Object Creation in Programming](#-the-role-of-object-creation-in-programming)
+7. [🌐 What Are Creational Design Patterns?](#-what-are-creational-design-patterns)
+8. [✨ Why Should You Care?](#-why-should-you-care)
+9. [💡 How Do Creational Design Patterns Relate to SOLID Principles?](#-how-do-creational-design-patterns-relate-to-solid-principles)
+10. [🎉 Final Takeaway](#-final-takeaway)
+
+---
+
+## 🌟 **Key Features**
 
 <h2 style="color:#4CAF50;">1️⃣ **Project Type:** Based on the <b>Creational Design Pattern</b> 🎉</h2>  
 <h2 style="color:#2196F3;">2️⃣ **Language Used:** <b>Core JAVA</b> ☕</h2>  
-<h2 style="color:#FF9800;">3️⃣ **Folder Structure:** This project comprises of <b>2 main folders</b> with subfolders for better organization 📂</h2>  
+<h2 style="color:#FF9800;">3️⃣ **Folder Structure:** This project comprises of <b>3 main folders</b> 📂</h2>  
 <h2 style="color:#9C27B0;">4️⃣ **Documentation:** Each folder contains a dedicated <b>README.md</b> file for detailed explanations 📘</h2>  
 <h2 style="color:#E91E63;">5️⃣ **Concepts Used:** This project applies concepts of <b>Low-Level Design (LLD)</b> and the <b>SOLID Design Principles</b> 🚀</h2>
 
 ---
 
-## 🧑‍💻 **Problem Statement** 🧑‍💻
+## 📁 **Folder Structure**
+
+This project contains the following structure:
+
+- **Total Folders:** 3 main folders
+- **Total Class Files:** 1 Java class file (`Shop_World_App.java`)
+- **Total README.md Files:** 1 main README.md file
+
+### Breakdown of Folders:
+
+1. **CreationalDesignPatterns**
+    - Contains subfolders for each creational design pattern (e.g., Singleton, Factory, etc.)
+    - Each folder has a README.md explaining that specific pattern.
+
+2. **ShopWorldApp**
+    - Contains the `Shop_World_App.java` file, which implements all the creational design patterns for the project.
+
+3. **Documentation**
+    - This folder contains this main README.md file, detailing the entire project.
+
+### Breakdown of Files:
+
+- **Shop_World_App.java**: This file implements the core logic of the project using the creational design patterns.
+
+Each folder contains a dedicated **README.md** file explaining the details of the specific pattern or implementation.
+
+---
+
+## 🧑‍💻 **Problem Statement**
 
 > **Design a system for a fictional online shopping platform called "ShopWorld".**
 
@@ -26,7 +69,7 @@ This system ensures a seamless shopping experience for users, while keeping the 
 
 ---
 
-## 🛠️ **Core Modules of ShopWorld** 🛠️
+## 🛠️ **Core Modules**
 
 > Below is a breakdown of the core components of the **ShopWorld** system:
 
@@ -57,7 +100,7 @@ This system ensures a seamless shopping experience for users, while keeping the 
 
 ---
 
-# 🌟 **Why Creational Design Pattern?** 🌟
+## 🌟 **Why Creational Design Pattern?**
 
 > **"Objects are the heart, soul, and brain of programming."**
 
@@ -69,7 +112,7 @@ At the core of every software project, it’s all about **object creation**. How
 
 ---
 
-## 🔥 **The Role of Object Creation in Programming** 🔥
+## 🔥 **The Role of Object Creation in Programming**
 
 > "A good software engineer plans object creation to avoid chaos and achieve scalable, maintainable, and efficient code."
 
@@ -85,7 +128,7 @@ These insights led to the creation of **Creational Design Patterns**, which act 
 
 ---
 
-## 🌐 **What Are Creational Design Patterns?** 🌐
+## 🌐 **What Are Creational Design Patterns?**
 
 > **"Creational Design Patterns provide solutions to efficiently create objects in a planned and structured way."**
 
@@ -101,7 +144,7 @@ Here’s why **Creational Design Patterns** are a game-changer:
 
 ---
 
-## ✨ **Why Should You Care?** ✨
+## ✨ **Why Should You Care?**
 
 Without proper planning for object creation, you might end up with:
 - 🚧 **Objects that aren't useful**
@@ -129,7 +172,7 @@ By planning for future changes and ensuring that new objects or features can be 
 
 ---
 
-## 🎉 **Final Takeaway** 🎉
+## 🎉 **Final Takeaway**
 
 > **"Objects are the brain that will drive all the activities in the world of programming."**
 
@@ -144,5 +187,4 @@ This makes your code:
 
 ---
 
-🚀 **Happy Coding!** 🚀  
-
+🚀 **Happy Coding!** 🚀

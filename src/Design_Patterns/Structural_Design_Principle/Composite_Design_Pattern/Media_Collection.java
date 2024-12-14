@@ -5,6 +5,9 @@ import Design_Patterns.Structural_Design_Principle.Adapter_Design_Pattern.Media;
 import java.util.ArrayList;
 import java.util.List;
 
+// Implementation of Composite Design Pattern
+// This class is able to play multiple media like audio, image and video
+
 public class Media_Collection implements Media {
 
     // Data Member
