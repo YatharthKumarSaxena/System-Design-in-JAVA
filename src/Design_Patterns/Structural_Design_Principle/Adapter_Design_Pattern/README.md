@@ -5,6 +5,18 @@
 
 ---
 
+## 📋 **Table of Contents**
+- [📂 Folder Structure](#-folder-structure)
+- [📚 Insights of This Folder](#-insights-of-this-folder)
+- [🧐 What is the Adapter Design Pattern?](#-what-is-the-adapter-design-pattern)
+- [💡 Where is the Adapter Design Pattern Used in This Project?](#-where-is-the-adapter-design-pattern-used-in-this-project)
+- [⚙️ How Does It Work?](#-how-does-it-work)
+- [🔥 Why Use the Adapter Design Pattern?](#-why-use-the-adapter-design-pattern)
+- [📘 Problem Statement](#-problem-statement)
+- [🎉 Congratulations!](#-congratulations)
+
+---
+
 ## 📂 **Folder Structure**
 
 This folder consists of a total of **6 files**. Below is the detailed structure of the folder and its files:
@@ -16,7 +28,7 @@ This folder consists of a total of **6 files**. Below is the detailed structure 
 4️⃣ **Video.java** — Represents the Video file entity.
 
 ### 📘 **Interface File (1)**
-5️⃣ **Media.java** — An interface implemented by the **Audio** and **Video** classes, ensuring compatibility with the media player.
+5️⃣ **Media.java** — An interface implemented by the **Audio**, **Image_Adapter**, and **Video** classes, ensuring compatibility with the media player.
 
 ### 📘 **README File (1)**
 6️⃣ **README.md** — The file you are currently reading, which explains the folder's structure and purpose.
@@ -44,7 +56,7 @@ This real-life concept is the same as the software **Adapter Design Pattern**.
 
 ## 💡 **Where is the Adapter Design Pattern Used in This Project?**
 
-In this project, we want to create a **Media Player** that can play **Audio**, **Video**, and **Images**.  
+In this project, we want to create a **Media Player** that can play **Audio** and **Video**, and **Images**.  
 However, there is a problem — the **Image** class is incompatible with the Media Player's expected behavior.  
 To solve this, we create an **Adapter** class called **Image_Adapter** that helps the **Image** class adapt to the Media Player's interface.
 
