@@ -1,35 +1,87 @@
-# Welcome to the System Design in JAVA Repo
-This Repo is created By Yatharth Kumar Saxena 
-# This REPO covers Low Level Design in JAVA
-# Skill Set Earned From this Repo
-1. JAVA 
+# 🛠️ **Welcome to the System Design in JAVA Repo**
+> **This Repo is created by Yatharth Kumar Saxena** 🚀
+
+---
+
+## 📚 **This REPO covers Low Level Design in JAVA**
+
+---
+
+## 💡 **Skill Set Earned From this Repo**
+
+1. JAVA
 2. OOPS IN JAVA
 3. LOW LEVEL DESIGN
 4. INTELLIJ IDEA IDE
-5. ChatGPT to Advance the Existing README.md files 
-# Visit Low Level Design Folder (All Content is present in that folder)
-# What is System Design
-Define System Design Jarvis in your own language
-<h1>Consist of two parts</h1>
-<h2>1. High Level Design</h2>
-Define High Level Design Jarvis in your own language
-<h3>What is High Level Design</h3>
-Used by Senior Software Developers like Software Architect
-<h1>Steps in High Level Design:- </h1>
-<h2>1. Requirement Gathering :- Functional Requirement and Non functional Requirement</h2>
-<h3>Functional Requirement :- Something that your customer needs</h3>
-<h3>Non functional Requirement :- Good to have features ,Your system should be scalable,
-it should not hang , it should be fast, it should be secure</h3>
-<h2>2. Prioritization :- Break the projects into phases depending on the criticallity that which phase 
-do you want to do first</h2>
-<h3>3. Do the Architecture of the project</h3>
-<h2> This involves what will be the components, what is the text tech which i am going to use,
-what will be the communication, how the system will communicate, what is going to be my infrastructure,
-how all these things work together and talk about the functional and non functional aspects</h2>
-<h2>2. Low Level Design</h2>
-Define Low Level Design Jarvis in your own language
-Used by Junior Software Developers like Freshers joining SDE job
-<h3>What is Low Level Design</h3>
-<h4>Steps in Low Level Design</h4>
-<h5>Includes the detailed design of each component , use OOPS , Solid Principle , Group of four design pattern</h5>
+5. ChatGPT to Advance the Existing README.md files
 
+---
+
+## 📂 **Visit Low Level Design Folder**
+> **All content is present in that folder.**
+
+---
+
+## 💬 **What is System Design?**
+
+System design is about planning the architecture and components of a system before implementing it. It's essentially about understanding the problem and figuring out how to build the solution with the best combination of technologies, components, and interaction.
+
+---
+
+# 🧩 **System Design Consists of Two Parts**
+
+## 1. **High-Level Design**
+
+**High-Level Design (HLD)** focuses on defining the structure of a system in a very abstract way, often used by senior developers and software architects. It provides a broad view of the system, covering the main components and how they interact.
+
+### What is High-Level Design?
+
+In simple terms, it’s a blueprint of the system architecture. Senior software developers and software architects use HLD to conceptualize the overall system.
+
+---
+
+## 🔧 **Steps in High-Level Design**
+
+### 1. **Requirement Gathering**
+
+- **Functional Requirements**: These are the features or functionalities that your customer needs. For example, a login system or a payment gateway.
+- **Non-Functional Requirements**: These define the quality attributes of the system, such as scalability, performance, security, and reliability. It’s about ensuring the system is fast, secure, and can handle growth.
+
+### 2. **Prioritization**
+
+This step involves breaking the project into phases and prioritizing tasks based on their importance or urgency. Critical features should be developed first to ensure they are implemented properly.
+
+### 3. **Architecture Design**
+
+At this stage, we define:
+- The components of the system.
+- The technologies to be used.
+- The communication protocols and data flow.
+- The infrastructure required for the system to work.
+
+This is where we talk about both functional and non-functional aspects to ensure the system works as intended, both in terms of features and performance.
+
+---
+
+## 2. **Low-Level Design**
+
+Low-Level Design (LLD) focuses on defining the implementation details of each component. This is where the actual coding, interaction, and class-level design take place, making it ideal for junior developers or freshers.
+
+### What is Low-Level Design?
+
+Low-Level Design is about detailing the components and their interactions. It’s more specific than high-level design and involves figuring out exactly how things will be done in terms of code, data structures, and class design.
+
+---
+
+### 🔧 **Steps in Low-Level Design**
+
+- Detailed design of each component.
+- Using **OOPS** principles to structure the design effectively.
+- Applying the **SOLID principles** to ensure the design is scalable, maintainable, and flexible.
+- Incorporating relevant **design patterns** to address common design problems.
+
+By the end of this process, the system should be ready for actual implementation, where the design will guide the development of each component.
+
+---
+
+🚀 **Happy Designing and Coding!** 🚀
