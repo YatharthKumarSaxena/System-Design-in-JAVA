@@ -1,11 +1,19 @@
 # 📘 **Welcome to the Design Principles of Low-Level Design!**
 > **I'm the README.md file of this repo, here to guide you every step of the way!** 🚀
-> 
+>
 > **This folder showcases the most essential and widely-used design principle — the legendary** 🛠️ **SOLID Design Principle** 🛠️
 
 ---
 
-## 📂 **What's Inside This Folder?** 📂
+## 📚 **Table of Contents** 📚
+- [📂 What's Inside This Folder?](#-whats-inside-this-folder)
+- [🔥 Why SOLID Design Principles?](#-why-solid-design-principles)
+- [📘 The 5 SOLID Design Principles](#-the-5-solid-design-principles)
+- [🎉 Final Takeaway](#-final-takeaway)
+
+---
+
+## 📂 **What's Inside This Folder?**
 
 This folder demonstrates the **SOLID Design Principles** using a practical, hands-on approach.  
 Here's what you’ll find:
@@ -18,7 +26,7 @@ Here's what you’ll find:
 
 ---
 
-## 🔥 **Why SOLID Design Principles?** 🔥
+## 🔥 **Why SOLID Design Principles?**
 
 **Why use the SOLID design principles?**  
 Because it promotes **clean code** that's:
@@ -31,12 +39,23 @@ It’s an acronym that represents **5 key design principles** for building flexi
 
 ---
 
-## 📘 **The 5 SOLID Design Principles** 📘
+## 📘 **The 5 SOLID Design Principles**
 
-| 🔥 **Letter** | 📘 **Principle**                | 📄 **Explanation**                                      |
-|---------------|---------------------------------|--------------------------------------------------------|
-| 🧱 **S**      | **Single Responsibility Principle (SRP)** | A class should only have **one responsibility**. It should only have one reason to change.  |
-| 🔒 **O**      | **Open-Closed Principle (OCP)**         | **Open for extension**, but **closed for modification**. Add new functionality without altering existing code.  |
-| 🔄 **L**      | **Liskov Substitution Principle (LSP)** | Derived classes should be substitutable for their base classes. No unexpected behavior when replacing parent objects with child objects. |
-| ✂️ **I**      | **Interface Segregation Principle (ISP)**| **Don’t force clients to implement unnecessary methods**. Interfaces should have specific, limited purposes. |
-| 🔗 **D**      | **Dependency Inversion Principle (DIP)**| Depend on **abstractions, not concrete implementations**.
+| 🔥 **Letter** | 📘 **Principle**                         | 📄 **Explanation**                                                                                             |
+|---------------|------------------------------------------|---------------------------------------------------------------------------------------------------------------|
+| 🧱 **S**      | **Single Responsibility Principle (SRP)** | A class should only have **one responsibility**. It should only have one reason to change.                     |
+| 🔒 **O**      | **Open-Closed Principle (OCP)**           | **Open for extension**, but **closed for modification**. Add new functionality without altering existing code.  |
+| 🔄 **L**      | **Liskov Substitution Principle (LSP)**   | Derived classes should be substitutable for their base classes. No unexpected behavior when replacing parent objects with child objects. |
+| ✂️ **I**      | **Interface Segregation Principle (ISP)** | **Don’t force clients to implement unnecessary methods**. Interfaces should have specific, limited purposes.    |
+| 🔗 **D**      | **Dependency Inversion Principle (DIP)**  | Depend on **abstractions, not concrete implementations**.                                                      |
+
+---
+
+## 🎉 **Final Takeaway**
+
+The **SOLID Design Principles** are essential for building **scalable, maintainable, and clean software systems**.  
+By mastering these principles, you can create systems that are **flexible to change**, **easy to maintain**, and **highly reusable**.
+
+🛠️ **Master the 5 principles — SRP, OCP, LSP, ISP, and DIP — and you'll be on your way to becoming a better software engineer!**
+
+🚀 **Happy Coding!** 🚀

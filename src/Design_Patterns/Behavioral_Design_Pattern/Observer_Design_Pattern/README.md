@@ -1,38 +1,64 @@
 # Welcome to the Observer_Design_Pattern Folder
-# Hello Everyone I am the README.md file of this folder to assist you
-# This design pattern is one of the most used Behavioral Design Pattern 
-<h1>Folder Structure</h1>
+# 📝 Welcome to the Observer_Design_Pattern Folder
+> **I'm the README.md file of this folder, here to guide you step-by-step!** 🚀
 
-<h1>What is Observer Design Pattern</h1>
-<h2>Define this pattern Jarvis in your own language</h2>
+---
 
-<h1>Where it is used in problem statement</h1>
-<h2>n the problem statement there is a one other thing that the 
-system console printer is actually observing text editor of a 
-time text editor create a text this console or printers should 
-take some action console should be displing some information
-printer should print that information so they are just observing
-the text editor so the system which observes we sometime go and 
-call it as a consumers or observers and system this text editor 
-is one which is creating the text I go and call it as a subject or
-I go and call it as a producer so every time a text create a create
-a text my control or create to react to in it has to observe consume
-that data and typically this what happens can be done well with the 
-help of a design pattern called as this communication between two 
-systems we have done with the help of something called as an observe
-design pattern . Now let us try to understand the importance of observer
-design pattern in the word of software development when software engineer
-become more advanced they learn about the more advanced topic like is 
-asynchronous communication, messaging queues, the system infrastructures 
-like kafka ; the internal principal of working there is nothing but this 
-observer design pattern</h2>
-<h1>Why Do we need Observer_Design_Pattern</h1>
-<h2> Now when the strategy is done so the next step that I should go and 
-reate my text editor but the text editor should also act like a subject 
-it should have the capability that other systems should go and get themselves 
-registered with the text editor so when I am defining the text editor class 
-I should do it in such a way that those things are streamlined and for doing
-that what I do is that let me go inside the observer design pattern folder and 
-in this folder I would define a text editor subject that is an interface text editor 
-subject to normali di system Di class the object which create something which produces
-that are typically which other systems might be observing orbiting for is called as subject</h2>
+## 📂 Table of Contents 📂
+1. [Folder Structure](#-folder-structure)
+2. [What is Observer Design Pattern?](#-what-is-observer-design-pattern)
+3. [Where is it Used in the Problem Statement?](#-where-is-it-used-in-the-problem-statement)
+4. [Get Ready to Dive In!](#-get-ready-to-dive-in)
+
+---
+
+## 📂 Folder Structure
+This folder contains the following items:
+
+### Total Items: 5
+- **Class Files**: 2 🖥️
+- **Interface Files**: 2 🧑‍💻
+- **README.md Files**: 1 📖 (The one you're reading)
+
+### Breakdown of the Contents:
+
+#### Class Files:
+1. **TextConsoleObserver.java** 🖥️: Implements the logic for observing and handling updates from the text editor.
+2. **TextEditor.java** 🧑‍💻: Represents the text editor, which produces the content that the observers react to.
+
+#### Interface Files:
+1. **TextEditorObserver.java** 🧑‍💻: Defines the contract for all observer classes, ensuring they can react to changes in the text editor.
+2. **TextEditorSubject.java** 🖥️: Defines the contract for any class (like the text editor) that can be observed by other systems.
+
+#### README.md File:
+- **README.md** 📖: The current README.md file, providing a detailed explanation of this folder's structure and design pattern.
+
+---
+
+## 💡 What is Observer Design Pattern?
+The Observer Design Pattern is a behavioral design pattern where one object (the **subject**) maintains a list of observers and notifies them of any changes to its state. This allows objects to be updated automatically when the state of another object changes, without the subject needing to know anything about the observers.
+
+### Key Components of the Observer Pattern:
+- **Subject** 🧑‍💻: The object that holds the state and notifies observers of changes. In this case, it's the **TextEditor**.
+- **Observer** 🖥️: The objects that react to changes in the subject. Here, the **TextConsoleObserver** is an observer of the text editor.
+- **Concrete Subject** 🧑‍💻: The class that implements the **Subject** interface and provides the update mechanism.
+- **Concrete Observer** 🖥️: The class that implements the **Observer** interface and updates itself based on changes in the subject.
+
+---
+
+## 📝 Where is it Used in the Problem Statement?
+In this project, the Observer Design Pattern is applied to a Text Editor application. The **TextEditor** is the subject, and both the **TextConsoleObserver** and **TextEditorObserver** act as observers.
+
+### How it's implemented:
+- The **TextEditor** 🧑‍💻 is responsible for creating and maintaining text. Other systems (observers) are registered to listen for changes in the text.
+- The **TextConsoleObserver** 🖥️ reacts to changes and displays the updated text on the console.
+- The **TextEditorObserver** 🖥️ listens for changes and performs specific actions (like printing the text) whenever the text is updated.
+
+This setup allows for the decoupling of the text editor's functionality from the systems that observe and react to changes, making the design more flexible and scalable.
+
+---
+
+## 🚀 **Get Ready to Dive In!**
+This folder demonstrates the Observer Design Pattern applied to a Text Editor project. Explore the code and see how changes in the text editor are observed and reacted to by other systems, providing a seamless integration.
+
+Happy coding! 🎉

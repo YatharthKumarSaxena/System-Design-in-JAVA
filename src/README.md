@@ -3,7 +3,17 @@
 
 ---
 
-## 🌟 **About This Repository** 🌟
+## 📚 **Table of Contents**
+1. [🌟 About This Repository](#-about-this-repository)
+2. [🛠️ What's Inside?](#-whats-inside)
+3. [🚀 Why This Repository Stands Out](#-why-this-repository-stands-out)
+4. [✨ How to Navigate This Repository](#-how-to-navigate-this-repository)
+5. [📚 Technologies & Tools Used](#-technologies--tools-used)
+6. [🎉 Get Ready to Dive In!](#-get-ready-to-dive-in)
+
+---
+
+## 🌟 **About This Repository**
 
 <h2 style="color:#4CAF50;"> 📂 This repo contains <b>5 Mini JAVA Projects</b> 🛠️</h2>  
 <h2 style="color:#2196F3;"> 🚀 Each project is built using concepts of <b>Low-Level Design (LLD)</b> 📐</h2>  
@@ -13,7 +23,7 @@
 
 ---
 
-## 🛠️ **What's Inside?** 🛠️
+## 🛠️ **What's Inside?**
 
 > **This repository is a collection of 5 mini projects** that demonstrate the application of **Low-Level Design (LLD) principles** in **JAVA**. These projects are designed to improve the understanding of key programming concepts, especially in OOPs.
 
@@ -24,7 +34,7 @@
 
 ---
 
-## 🚀 **Why This Repository Stands Out** 🚀
+## 🚀 **Why This Repository Stands Out**
 
 🎉 **5 Mini Projects in One Repo** — Learn, practice, and master LLD concepts!  
 📘 **OOPs Concepts** — Strengthen your understanding of Encapsulation, Inheritance, Polymorphism, and Abstraction.  
@@ -33,7 +43,7 @@
 
 ---
 
-## ✨ **How to Navigate This Repository** ✨
+## ✨ **How to Navigate This Repository**
 
 1️⃣ **Explore the 5 Mini Projects** — Each project has its own folder with code and documentation.  
 2️⃣ **Check the README in Each Project** — Each project contains a `README.md` file with detailed explanations.  
@@ -41,7 +51,7 @@
 
 ---
 
-## 📚 **Technologies & Tools Used** 📚
+## 📚 **Technologies & Tools Used**
 
 | 🔧 **Tool/Technology**  | 📘 **Purpose** |
 |-----------------------|---------------------|
@@ -52,7 +62,7 @@
 
 ---
 
-## 🎉 **Get Ready to Dive In!** 🎉
+## 🎉 **Get Ready to Dive In!**
 
 This repository offers a perfect playground to practice and master **Low-Level Design (LLD) concepts** with **OOPs in JAVA**. Each mini-project is a chance to learn something new and improve your coding skills.
 

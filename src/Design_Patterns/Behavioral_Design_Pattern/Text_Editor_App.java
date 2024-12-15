@@ -43,6 +43,4 @@ public class Text_Editor_App {
         textEditorCommandUser.execute();
         textEditor.notifyObserver();
     }
-
-
 }
