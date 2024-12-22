@@ -46,4 +46,6 @@ public class DVD implements Library_Item{
     public double getValue() {
         return this.value;
     }
+
+    public String getArtist(){ return this.artist; }
 }

@@ -44,4 +44,8 @@ public class Books implements Library_Item{
     public double getValue() {
         return this.value;
     }
+
+    public String getAuthor() {
+        return this.author;
+    }
 }

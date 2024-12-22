@@ -50,4 +50,8 @@ public class CD implements Library_Item{
     public double getValue() {
         return this.value;
     }
+
+    public String getAuthor() {
+        return this.artist;
+    }
 }
