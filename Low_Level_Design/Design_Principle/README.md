@@ -20,6 +20,7 @@ This folder contains **1 main folder** and **1 README.md file**.
 Here’s the breakdown of the folder structure:
 
 - 📁 **SOLID_Design_Principle** (Folder)
+- 💡 **LMS_App** (Class File)
 - 📘 **README.md** — The file you're currently reading!
 
 ---
@@ -29,11 +30,11 @@ Here’s the breakdown of the folder structure:
 This folder demonstrates the **SOLID Design Principles** using a practical, hands-on approach.  
 Here's what you’ll find:
 - 🔍 **Problem Statement** — A real-world problem is used as the foundation for the mini-project.
-- 🏗️ **Mini Project** — A fully functional project where each SOLID principle is applied in the actual code.
+- 🏗️ **Mini Project** — A fully functional project where each SOLID principle is applied in the actual code. In LMS_App class implements all the design principle in itself
 - 📘 **README Files** — Each folder has its own `README.md` file to guide you through the principles applied in that specific folder.
 - 📝 **Comments in Files** — Each class and interface file contains **detailed comments** to explain which SOLID principle is used and how it works.
 
-> **Note:** The files are interlinked, demonstrating how different classes, interfaces, and principles work together.
+> **Note:** The files are interlinked, demonstrating how different classes, interfaces, and principles work together.LMS_App stands for Library Management System App
 
 ---
 

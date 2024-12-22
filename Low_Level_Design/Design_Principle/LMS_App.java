@@ -8,10 +8,7 @@ import Design_Principle.SOLID_Design_Principle.main.LateFeeCalculate;
 import Design_Principle.SOLID_Design_Principle.main.LateFeeCalculator;
 import Design_Principle.SOLID_Design_Principle.main.Library;
 
-import java.util.ArrayList;
-import java.util.List;
-
-public class LMS_System {
+public class LMS_App {
     public static void main(String[] args) {
         // Instantiating Objects Of Library
 
