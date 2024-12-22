@@ -25,7 +25,7 @@ This repository consists of **3 main folders**:
 1. **📁 Design_Pattern**
     - **Number of Files:** X files
     - **README.md** — Overview of design patterns used.
-    - **Class Files** — Implementations of various design patterns (e.g., Singleton, Factory, Observer).
+    - **Class Files** — Implementations of various design patterns (e.g., Creational, Behavioral , Structural).
 
 2. **📁 Design_Principle**
     - **Number of Files:** X files
@@ -67,7 +67,7 @@ This repository consists of **3 main folders**:
 
 🎉 **6 Mini Projects in One Repo** — Learn, practice, and master LLD concepts!  
 🔧 **1 Project Focused on Design Principles** — Master the SOLID principles with hands-on examples.  
-📘 **3 Design Pattern Projects** — Gain practical knowledge of key design patterns like Singleton, Factory, and Observer.  
+📘 **3 Design Pattern Projects** — Gain practical knowledge of key design patterns like Creational,Structural, and Behavioral.  
 📂 **2 Advanced Projects** — Witness the combined application of design principles and design patterns.  
 📘 **OOPs Concepts** — Strengthen your understanding of Encapsulation, Inheritance, Polymorphism, and Abstraction.  
 ☕ **Core JAVA** — Dive into one of the most widely used programming languages!  

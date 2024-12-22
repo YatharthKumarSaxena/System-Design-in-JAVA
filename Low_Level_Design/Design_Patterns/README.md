@@ -75,11 +75,11 @@ Instead of struggling to find the right approach to a problem, you can follow we
 
 There are **3 main types of design patterns**, each with a specific purpose. Here’s a quick breakdown:
 
-| 📂 **Category**         | 📘 **What It Does**                            | 🛠️ **Example Patterns**                   |
-|-----------------------|-------------------------------------------------|------------------------------------------|
-| 📁 **Creational**       | Focuses on object creation. Ensures flexibility and efficiency when creating objects. | **Singleton**, **Factory**, **Builder**  |
-| 📁 **Structural**       | Deals with object composition. Helps create large, flexible structures. | **Adapter**, **Composite**, **Facade**  |
-| 📁 **Behavioral**       | Focuses on communication between objects. Ensures clear and effective interactions. | **Observer**, **Strategy**, **Command**  |
+| 📂 **Category**         | 📘 **What It Does**                            | 🛠️ **Example Patterns**                  |
+|-----------------------|-------------------------------------------------|-------------------------------------------|
+| 📁 **Creational**       | Focuses on object creation. Ensures flexibility and efficiency when creating objects. | **Singleton**, **Factory**, **Builder**   |
+| 📁 **Structural**       | Deals with object composition. Helps create large, flexible structures. | **Adapter**, **Composite**, **Decorator** |
+| 📁 **Behavioral**       | Focuses on communication between objects. Ensures clear and effective interactions. | **Observer**, **Strategy**, **Command**   |
 
 ### 🔍 **1. Creational Design Patterns**
 Creational patterns focus on **how objects are created**. They provide flexibility and control in how objects are instantiated.
