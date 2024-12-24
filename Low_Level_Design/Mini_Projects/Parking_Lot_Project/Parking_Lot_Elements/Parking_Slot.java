@@ -4,4 +4,7 @@ public interface Parking_Slot {
     // Methods of Parking_Slot
     String get_ID();
     boolean get_Status();
+    String get_Type();
+    void set_Status();
+    void reset_Status();
 }

@@ -18,6 +18,7 @@ public class Employee implements Employee_Interface{
         this.phoneNumber = phoneNumber;
         this.slot = slot;
         this.vehicle = vehicle;
+        this.slot.set_Status();
     }
 
     // Member Functions

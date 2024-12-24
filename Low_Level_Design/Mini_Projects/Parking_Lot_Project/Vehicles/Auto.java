@@ -8,7 +8,7 @@ public class Auto implements Vehicle{
     private String country;
 
     // Parameterized Constructor
-    public Auto(String registrationNumber, String state, String country, int ticketID) {
+    public Auto(String registrationNumber, String state, String country) {
         this.registrationNumber = registrationNumber;
         this.state = state;
         this.country = country;

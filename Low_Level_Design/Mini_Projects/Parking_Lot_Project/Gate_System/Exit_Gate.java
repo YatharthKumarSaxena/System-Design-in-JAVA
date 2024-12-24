@@ -21,6 +21,7 @@ public class Exit_Gate implements Exit_Gate_Interface{
     @Override
     public double generateBill(Ticket ticket) {
         double hour = ticket.get_timeStamp();
+        ticket.get_ParkingSlot().reset_Status();
         return ticket.get_Vehicle().calculateRentalPrice(hour);
     }
 

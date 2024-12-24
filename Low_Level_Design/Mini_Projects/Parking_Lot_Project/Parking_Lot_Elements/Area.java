@@ -6,10 +6,10 @@ public class Area implements Parking_Area{
 
     // Data Members
     private String ID;
-    private List<Parking_Slot> slots;
+    private List<Slot> slots;
     private Address address;
 
-    public Area(String ID, List<Parking_Slot> slots, Address address) {
+    public Area(String ID, List<Slot> slots, Address address) {
         this.ID = ID;
         this.slots = slots;
         this.address = address;

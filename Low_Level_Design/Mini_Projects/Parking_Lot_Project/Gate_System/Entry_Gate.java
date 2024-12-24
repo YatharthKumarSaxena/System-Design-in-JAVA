@@ -21,6 +21,7 @@ public class Entry_Gate implements Entry_Gate_Interface{
     @Override
     public Ticket generateTicket(double timeStamp, Vehicle vehicle, Parking_Slot parkingSlot) {
         Ticket ticket = new Ticket(parkingSlot,timeStamp,vehicle);
+        parkingSlot.set_Status();
         return ticket;
     }
 

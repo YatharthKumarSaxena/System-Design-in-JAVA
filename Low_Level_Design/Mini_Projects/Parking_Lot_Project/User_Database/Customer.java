@@ -9,15 +9,13 @@ public class Customer implements Customer_Interface{
     private String name;
     private String ID;
     private String phoneNumber;
-    private Vehicle vehicle;
     private Ticket ticket;
 
     // Parameterized Constructor
-    public Customer(String name, String ID, String phoneNumber, Vehicle vehicle , Ticket ticket) {
+    public Customer(String name, String ID, String phoneNumber , Ticket ticket) {
         this.name = name;
         this.ID = ID;
         this.phoneNumber = phoneNumber;
-        this.vehicle = vehicle;
         this.ticket = ticket;
     }
 
@@ -35,11 +33,6 @@ public class Customer implements Customer_Interface{
     @Override
     public String get_ID() {
         return this.ID;
-    }
-
-    @Override
-    public Vehicle get_Vehicle() {
-        return this.vehicle;
     }
 
     @Override

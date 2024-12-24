@@ -7,6 +7,5 @@ public interface User {
     void display_Category();
     String get_Name();
     String get_ID();
-    Vehicle get_Vehicle();
     String get_phoneNumber();
 }
