@@ -64,6 +64,11 @@ public class Parking_Lot_Management_System {
         Ticket t2 = EnGate2.generateTicket(10,C1,slot2);
         Ticket t3 = EnGate2.generateTicket(10,C2,slot3);
 
+        System.out.println("Ticket ID for each ticket "+"Ticket1 = "+t1.get_TicketID());
+        System.out.println("Ticket ID for each ticket "+"Ticket2 = "+t2.get_TicketID());
+        System.out.println("Ticket ID for each ticket "+"Ticket3 = "+t3.get_TicketID());
+        System.out.println();
+
         System.out.println("Status After Initializing Tickets");
         System.out.println("Total number of Empty Slots in "+P.getName()+" = "+P.getNumberOfEmptySlots());
         System.out.println("Total number of Filled Slots in "+P.getName()+" = "+P.getNumberOfFilledSlots());
@@ -73,11 +78,11 @@ public class Parking_Lot_Management_System {
         // Initializing Users
 
         // Initialized Employee Without Ticket (As Slots are Reserved for them)
-        Employee user1 = new Employee("Yatharth Kumar Saxena","1","5632451290",slot1,B1);
+        Employee user1 = Employee.getInstance("Yatharth Kumar Saxena","1","5632451290",slot1,B1);
         // Initialized Customers by their tickets
-        Customer user2 = new Customer("Abhishek Varshney","2","9876452312",t1);
-        Customer user3 = new Customer("Oliver Johnson","3","8945273412",t2);
-        Customer user4 = new Customer("Liam Smith","4","9812541109",t3);
+        Customer user2 = Customer.getInstance("Abhishek Varshney","2","9876452312",t1);
+        Customer user3 = Customer.getInstance("Oliver Johnson","3","8945273412",t2);
+        Customer user4 = Customer.getInstance("Liam Smith","4","9812541109",t3);
 
         System.out.println("Status After Initializing Users especially an Employee");
         System.out.println("Total number of Empty Slots in "+P.getName()+" = "+P.getNumberOfEmptySlots());

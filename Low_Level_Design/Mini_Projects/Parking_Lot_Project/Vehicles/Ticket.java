@@ -6,18 +6,20 @@ public class Ticket implements Parking_Ticket{
 
     // Data Members
     private static int ticketID;
+    private int ID;
     private Parking_Slot slot;
     private double timeStamp;
     private Vehicle vehicle;
 
     // Static Member Initialization
     static {
-        ticketID = 1;
+        ticketID = 0;
     }
 
     // Parameterized Constructor
     public Ticket(Parking_Slot slot,double timeStamp,Vehicle vehicle) {
         ticketID++;
+        this.ID = ticketID;
         this.slot = slot;
         this.timeStamp = timeStamp;
         this.vehicle = vehicle;
@@ -26,7 +28,7 @@ public class Ticket implements Parking_Ticket{
     // Member Functions
     @Override
     public int get_TicketID() {
-        return ticketID;
+        return ID;
     }
 
     @Override
