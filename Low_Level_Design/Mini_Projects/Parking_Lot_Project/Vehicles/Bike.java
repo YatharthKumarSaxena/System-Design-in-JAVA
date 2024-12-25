@@ -1,5 +1,9 @@
 package Mini_Projects.Parking_Lot_Project.Vehicles;
 
+// SRP is followed
+// Open Closed Principle is followed here
+// As we can create other classes like truck , bus etc. without modifying the code
+
 public class Bike implements Vehicle{
 
     // Data Members

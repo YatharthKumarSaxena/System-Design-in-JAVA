@@ -1,8 +1,10 @@
 package Mini_Projects.Parking_Lot_Project.User_Database;
 
 import Mini_Projects.Parking_Lot_Project.Parking_Lot_Elements.Parking_Slot;
-import Mini_Projects.Parking_Lot_Project.Vehicles.Ticket;
 import Mini_Projects.Parking_Lot_Project.Vehicles.Vehicle;
+
+/* SRP is followed */
+// DRY principle is followed
 
 public class Employee implements Employee_Interface{
 
@@ -15,7 +17,7 @@ public class Employee implements Employee_Interface{
     private Parking_Slot slot;
 
     // Private Parametrized Constructor
-    private Employee(String name, String ID, String phoneNumber, Parking_Slot slot,Vehicle vehicle) {
+    public Employee(String name, String ID, String phoneNumber, Parking_Slot slot,Vehicle vehicle) {
         this.name = name;
         this.ID = ID;
         this.phoneNumber = phoneNumber;
@@ -24,23 +26,7 @@ public class Employee implements Employee_Interface{
         this.slot.set_Status();
     }
 
-
-    // To ensure one thread execution in order to avoid multiple instance creation
-    // JAVA is a multithreaded language
-    // So when two threads are trying to call the get instance method
-    // We might have the multiple instances created
-    // To avoid the multiple object creation at the same time synchronized keyword is used
-    // Synchronized Keyword ensures that At a moment only one thread executes the whole entire method
-    // This will ensure single instance creation of user database here
-
     // Member Functions
-
-    public static synchronized Employee getInstance(String name, String ID, String phoneNumber, Parking_Slot slot,Vehicle vehicle){
-        if(instance == null){
-            instance = new Employee(name,ID,phoneNumber,slot,vehicle);
-        }
-        return instance;
-    }
 
     @Override
     public Parking_Slot get_Slot() {

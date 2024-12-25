@@ -2,6 +2,8 @@ package Mini_Projects.Parking_Lot_Project.Vehicles;
 
 import Mini_Projects.Parking_Lot_Project.Parking_Lot_Elements.Parking_Slot;
 
+// SRP is followed
+
 public class Ticket implements Parking_Ticket{
 
     // Data Members

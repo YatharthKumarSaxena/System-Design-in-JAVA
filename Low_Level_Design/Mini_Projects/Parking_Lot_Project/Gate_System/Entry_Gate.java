@@ -5,6 +5,13 @@ import Mini_Projects.Parking_Lot_Project.Parking_Lot_Elements.Parking_Slot;
 import Mini_Projects.Parking_Lot_Project.Vehicles.Ticket;
 import Mini_Projects.Parking_Lot_Project.Vehicles.Vehicle;
 
+// SRP is followed
+// Entry_Gate handles ticket generation.
+
+/*Dependency Inversion Principle (DIP):
+ Higher-level modules (Entry_Gate and Exit_Gate) depend on abstractions (Gate interface)
+ rather than concrete implementations. This makes the code flexible and easier to maintain.*/
+
 public class Entry_Gate implements Entry_Gate_Interface{
 
     // Data Members

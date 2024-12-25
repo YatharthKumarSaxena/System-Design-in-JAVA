@@ -1,6 +1,8 @@
 package Mini_Projects.Parking_Lot_Project.User_Database;
 
-import Mini_Projects.Parking_Lot_Project.Vehicles.Vehicle;
+// This interface helps in implementing customer and employee interface
+// DRY Principle is followed to minimize code redundancy
+/* SRP is followed */
 
 public interface User {
     // Methods of User

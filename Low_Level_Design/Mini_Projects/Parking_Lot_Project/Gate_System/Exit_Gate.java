@@ -3,6 +3,13 @@ package Mini_Projects.Parking_Lot_Project.Gate_System;
 import Mini_Projects.Parking_Lot_Project.Parking_Lot_Elements.Parking_Area;
 import Mini_Projects.Parking_Lot_Project.Vehicles.Ticket;
 
+// SRP is followed
+// Exit_Gate handles billing
+
+/*Dependency Inversion Principle (DIP):
+ Higher-level modules (Entry_Gate and Exit_Gate) depend on abstractions (Gate interface)
+ rather than concrete implementations. This makes the code flexible and easier to maintain.*/
+
 public class Exit_Gate implements Exit_Gate_Interface{
 
     // Data Members

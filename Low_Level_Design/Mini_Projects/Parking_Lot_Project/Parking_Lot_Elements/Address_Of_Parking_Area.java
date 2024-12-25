@@ -1,6 +1,7 @@
 package Mini_Projects.Parking_Lot_Project.Parking_Lot_Elements;
 
-import java.util.List;
+// Single Responsibility Principle is followed
+// This class is holding single responsibility of displaying address details
 
 public class Address_Of_Parking_Area implements Address{
 
