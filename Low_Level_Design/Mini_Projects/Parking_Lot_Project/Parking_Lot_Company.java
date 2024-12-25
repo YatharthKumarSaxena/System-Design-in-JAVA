@@ -4,6 +4,9 @@ import Mini_Projects.Parking_Lot_Project.Parking_Lot_Elements.Parking_Area;
 
 import java.util.List;
 
+/* Singleton Design Pattern is Used */
+/* Our Design is modelled to work for Individual Company */
+
 // SRP is followed
 
 /* Use of Composite Design Pattern as Parking_Lot consist of collection of Parking Area
@@ -21,20 +24,32 @@ import java.util.List;
 public class Parking_Lot_Company {
 
     // Data Members
-    private String ID;
     private String name;
-    private List<Parking_Area>Areas;
+    private List<Parking_Area> Areas;
 
-    // Parameterized Constructor
-    public Parking_Lot_Company(String ID, String name, List<Parking_Area> areas) {
-        this.ID = ID;
+    // Private static instance to ensure a single instance
+    private static Parking_Lot_Company instance;
+
+    // Private Constructor to prevent instantiation
+    private Parking_Lot_Company(String name, List<Parking_Area> areas) {
         this.name = name;
-        Areas = areas;
+        this.Areas = areas;
     }
 
-    // Member Functions
-    public String getID() {
-        return ID;
+    // To ensure one thread execution in order to avoid multiple instance creation
+    // JAVA is a multithreaded language
+    // So when two threads are trying to call the get instance method
+    // We might have the multiple instances created
+    // To avoid the multiple object creation at the same time synchronized keyword is used
+    // Synchronized Keyword ensures that At a moment only one thread executes the whole entire method
+    // This will ensure single instance creation of user database here
+
+    // Public method to get the instance of the class
+    public static synchronized Parking_Lot_Company getInstance(String name, List<Parking_Area> areas) {
+        if (instance == null) {
+            instance = new Parking_Lot_Company(name, areas);
+        }
+        return instance;
     }
 
     public String getName() {
@@ -45,25 +60,27 @@ public class Parking_Lot_Company {
         return Areas;
     }
 
-    public int getNumberOfEmptySlots(){
+    public int getNumberOfEmptySlots() {
         int emptySlots = 0;
-        for(Parking_Area A: Areas){
+        for (Parking_Area A : Areas) {
             emptySlots += A.getNumberOfEmptySlots();
         }
         return emptySlots;
     }
 
-    public int getNumberOfFilledSlots(){
+    public int getNumberOfFilledSlots() {
         int filledSlots = 0;
-        for(Parking_Area A: Areas){
+        for (Parking_Area A : Areas) {
             filledSlots += A.getNumberOfFilledSlots();
         }
         return filledSlots;
     }
 
-    public int getTotalSlots(){
-        int totalSlot = 0;
-        totalSlot = (this.getNumberOfFilledSlots() + this.getNumberOfEmptySlots());
-        return totalSlot;
+    public int getTotalSlots() {
+        return this.getNumberOfFilledSlots() + this.getNumberOfEmptySlots();
+    }
+
+    public void get_Rating(){
+        System.out.println("Our "+this.name+" has a rating of "+ 4.5+"/"+5);
     }
 }

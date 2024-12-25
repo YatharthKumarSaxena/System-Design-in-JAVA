@@ -9,21 +9,27 @@ import Mini_Projects.Parking_Lot_Project.Vehicles.Vehicle;
 public class Employee implements Employee_Interface{
 
     // Data Members
-    private static Employee instance;
+    private static int User_ID;
     private String name;
-    private String ID;
+    private int ID;
     private String phoneNumber;
     private Vehicle vehicle;
     private Parking_Slot slot;
 
     // Private Parametrized Constructor
-    public Employee(String name, String ID, String phoneNumber, Parking_Slot slot,Vehicle vehicle) {
+    public Employee(String name, String phoneNumber, Parking_Slot slot,Vehicle vehicle) {
         this.name = name;
-        this.ID = ID;
+        User_ID++;
+        this.ID = User_ID;
         this.phoneNumber = phoneNumber;
         this.slot = slot;
         this.vehicle = vehicle;
         this.slot.set_Status();
+    }
+
+    // Static Member Initialization
+    static {
+        User_ID = 0;
     }
 
     // Member Functions
@@ -44,7 +50,7 @@ public class Employee implements Employee_Interface{
     }
 
     @Override
-    public String get_ID() {
+    public int get_ID() {
         return this.ID;
     }
 

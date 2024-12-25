@@ -15,13 +15,20 @@ import Mini_Projects.Parking_Lot_Project.Vehicles.Vehicle;
 public class Entry_Gate implements Entry_Gate_Interface{
 
     // Data Members
-    private String ID;
+    private static int EntryGate_ID;
+    private int ID;
     private Parking_Area parkingArea;
 
     // Parameterized Constructor
-    public Entry_Gate(String ID, Parking_Area parkingArea) {
-        this.ID = ID;
+    public Entry_Gate(Parking_Area parkingArea) {
+        EntryGate_ID++;
+        this.ID = EntryGate_ID;
         this.parkingArea = parkingArea;
+    }
+
+    // Static Member Initialization
+    static {
+        EntryGate_ID = 0;
     }
 
     // Member Functions
@@ -33,7 +40,7 @@ public class Entry_Gate implements Entry_Gate_Interface{
     }
 
     @Override
-    public String get_ID() {
+    public int get_ID() {
         return this.ID;
     }
 

@@ -9,16 +9,23 @@ public class Customer implements Customer_Interface{
 
     // Data Members
     private String name;
-    private String ID;
+    private static int Cus_ID;
+    private int ID;
     private String phoneNumber;
     private Ticket ticket;
 
     // Private Parameterized Constructor
-    public Customer(String name, String ID, String phoneNumber , Ticket ticket) {
+    public Customer(String name, String phoneNumber , Ticket ticket) {
         this.name = name;
-        this.ID = ID;
+        Cus_ID++;
+        this.ID = Cus_ID;
         this.phoneNumber = phoneNumber;
         this.ticket = ticket;
+    }
+
+    // Static Member Initialization
+    static {
+        Cus_ID = 0;
     }
 
     // Member Functions
@@ -33,7 +40,7 @@ public class Customer implements Customer_Interface{
     }
 
     @Override
-    public String get_ID() {
+    public int get_ID() {
         return this.ID;
     }
 

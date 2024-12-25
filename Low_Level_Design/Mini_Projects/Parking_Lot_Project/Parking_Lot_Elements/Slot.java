@@ -3,20 +3,27 @@ package Mini_Projects.Parking_Lot_Project.Parking_Lot_Elements;
 public class Slot implements Parking_Slot{
 
     // Data Members
-    private String ID;
+    private static int Slot_ID;
+    private int ID;
     private boolean status;
     private String type;
 
     // Parameterized Constructor
-    public Slot(String ID,String type) {
-        this.ID = ID;
+    public Slot(String type) {
+        Slot_ID++;
+        this.ID = Slot_ID;
         status = true;  // Means Slot is Available to Park
         this.type = type;   // Two/Three/Four Wheeler Type
     }
 
+    // Static Member Initialization
+    static {
+        Slot_ID = 0;
+    }
+
     // Member Functions
     @Override
-    public String get_ID() {
+    public int get_ID() {
         return this.ID;
     }
 

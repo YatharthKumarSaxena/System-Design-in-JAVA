@@ -18,7 +18,8 @@ polymorphism and ensures LSP compliance.
 public class Area implements Parking_Area{
 
     // Data Members
-    private String ID;
+    private static int Area_ID;
+    private int ID;
     // In future if we make Special Slots then they come in category of Parking_Slot
     // So We do not have to worry about calculating their empty and filled slots separately
     // Example there may be special slots for Electric Vehicles
@@ -26,15 +27,21 @@ public class Area implements Parking_Area{
     private List<Parking_Slot> slots;
     private Address address;
 
-    public Area(String ID, List<Parking_Slot> slots, Address address) {
-        this.ID = ID;
+    public Area(List<Parking_Slot> slots, Address address) {
+        Area_ID++;
+        this.ID = Area_ID;
         this.slots = slots;
         this.address = address;
     }
 
+    // Static Member Initialization
+    static {
+        Area_ID = 0;
+    }
+
     // Member Functions
     @Override
-    public String get_ID() {
+    public int get_ID() {
         return this.ID;
     }
 

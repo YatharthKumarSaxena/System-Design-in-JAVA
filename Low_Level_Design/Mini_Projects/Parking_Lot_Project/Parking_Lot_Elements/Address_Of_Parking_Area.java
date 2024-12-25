@@ -6,7 +6,8 @@ package Mini_Projects.Parking_Lot_Project.Parking_Lot_Elements;
 public class Address_Of_Parking_Area implements Address{
 
     // Data Members
-    private String ID;
+    private static int Address_ID;
+    private int ID;
     private String place;
     private String pinCode;
     private String city;
@@ -14,8 +15,9 @@ public class Address_Of_Parking_Area implements Address{
     private String country;
 
     // Parameterized Constructors
-    public Address_Of_Parking_Area(String ID, String place, String pinCode, String city, String state, String country) {
-        this.ID = ID;
+    public Address_Of_Parking_Area(String place, String pinCode, String city, String state, String country) {
+        Address_ID++;
+        this.ID = Address_ID;
         this.place = place;
         this.pinCode = pinCode;
         this.city = city;
@@ -23,9 +25,15 @@ public class Address_Of_Parking_Area implements Address{
         this.country = country;
     }
 
+
+    // Static Member Initialization
+    static {
+        Address_ID = 0;
+    }
+
     // Member Functions
     @Override
-    public String get_ID() {
+    public int get_ID() {
         return this.ID;
     }
 
