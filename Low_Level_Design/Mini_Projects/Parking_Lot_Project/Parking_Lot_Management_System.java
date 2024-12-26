@@ -4,7 +4,9 @@ package Mini_Projects.Parking_Lot_Project;
 import Mini_Projects.Parking_Lot_Project.Gate_System.*;
 import Mini_Projects.Parking_Lot_Project.Parking_Lot_Elements.*;
 import Mini_Projects.Parking_Lot_Project.User_Database.Customer;
+import Mini_Projects.Parking_Lot_Project.User_Database.Customer_Interface;
 import Mini_Projects.Parking_Lot_Project.User_Database.Employee;
+import Mini_Projects.Parking_Lot_Project.User_Database.Employee_Interface;
 import Mini_Projects.Parking_Lot_Project.Vehicles.*;
 
 import java.util.ArrayList;
@@ -86,9 +88,9 @@ public class Parking_Lot_Management_System {
         System.out.println();
 
         // Initializing Tickets
-        Ticket t1 = EnGate1.generateTicket(10,A1,slot4);
-        Ticket t2 = EnGate2.generateTicket(10,C1,slot2);
-        Ticket t3 = EnGate2.generateTicket(10,C2,slot3);
+        Parking_Ticket t1 = EnGate1.generateTicket(10,A1,slot4);
+        Parking_Ticket t2 = EnGate2.generateTicket(10,C1,slot2);
+        Parking_Ticket t3 = EnGate2.generateTicket(10,C2,slot3);
 
         System.out.println("Ticket ID for each ticket "+"Ticket1 = "+t1.get_TicketID());
         System.out.println("Ticket ID for each ticket "+"Ticket2 = "+t2.get_TicketID());
@@ -104,11 +106,11 @@ public class Parking_Lot_Management_System {
         // Initializing Users
 
         // Initialized Employee Without Ticket (As Slots are Reserved for them)
-        Employee user1 = new Employee("Yatharth Kumar Saxena","5632451290",slot1,B1);
+        Employee_Interface user1 = new Employee("Yatharth Kumar Saxena","5632451290",slot1,B1);
         // Initialized Customers by their tickets
-        Customer user2 = new Customer("Abhishek Varshney","9876452312",t1);
-        Customer user3 = new Customer("Oliver Johnson","8945273412",t2);
-        Customer user4 = new Customer("Liam Smith","9812541109",t3);
+        Customer_Interface user2 = new Customer("Abhishek Varshney","9876452312",t1);
+        Customer_Interface user3 = new Customer("Oliver Johnson","8945273412",t2);
+        Customer_Interface user4 = new Customer("Liam Smith","9812541109",t3);
 
         System.out.println("Status After Initializing Users especially an Employee");
         System.out.println("Total number of Empty Slots in "+P.getName()+" = "+P.getNumberOfEmptySlots());

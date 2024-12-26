@@ -1,21 +1,19 @@
-package Mini_Projects.Parking_Lot_Project.User_Database;
+package Mini_Projects.Vehicle_Renting_System_Project.User_Database;
 
-import Mini_Projects.Parking_Lot_Project.Vehicles.Parking_Ticket;
 
-/* SRP is followed */
-// DRY principle is followed
+import Mini_Projects.Vehicle_Renting_System_Project.Vehicle_Renting_Elements.Ticket;
 
-public class Customer implements Customer_Interface{
+public class Customer implements Customer_Interface {
 
     // Data Members
     private String name;
     private static int Cus_ID;
     private int ID;
     private String phoneNumber;
-    private Parking_Ticket ticket;
+    private Ticket ticket;
 
     // Private Parameterized Constructor
-    public Customer(String name, String phoneNumber , Parking_Ticket ticket) {
+    public Customer(String name, String phoneNumber , Ticket ticket) {
         this.name = name;
         Cus_ID++;
         this.ID = Cus_ID;
@@ -50,7 +48,7 @@ public class Customer implements Customer_Interface{
     }
 
     @Override
-    public Parking_Ticket get_Ticket() {
+    public Ticket get_Ticket() {
         return this.ticket;
     }
 }

@@ -1,6 +1,6 @@
 package Mini_Projects.Parking_Lot_Project.Gate_System;
 
-import Mini_Projects.Parking_Lot_Project.Vehicles.Ticket;
+import Mini_Projects.Parking_Lot_Project.Vehicles.Parking_Ticket;
 
 // ISP is followed
 // DRY Principle is followed
@@ -9,5 +9,5 @@ import Mini_Projects.Parking_Lot_Project.Vehicles.Ticket;
 
 public interface Exit_Gate_Interface extends Gate{
     // Extra Functionalities of Exit Gate
-    double generateBill(Ticket ticket);
+    double generateBill(Parking_Ticket ticket);
 }

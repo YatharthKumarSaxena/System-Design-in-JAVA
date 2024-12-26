@@ -2,6 +2,7 @@ package Mini_Projects.Parking_Lot_Project.Gate_System;
 
 import Mini_Projects.Parking_Lot_Project.Parking_Lot_Elements.Parking_Area;
 import Mini_Projects.Parking_Lot_Project.Parking_Lot_Elements.Parking_Slot;
+import Mini_Projects.Parking_Lot_Project.Vehicles.Parking_Ticket;
 import Mini_Projects.Parking_Lot_Project.Vehicles.Ticket;
 import Mini_Projects.Parking_Lot_Project.Vehicles.Vehicle;
 
@@ -33,8 +34,8 @@ public class Entry_Gate implements Entry_Gate_Interface{
 
     // Member Functions
     @Override
-    public Ticket generateTicket(double timeStamp, Vehicle vehicle, Parking_Slot parkingSlot) {
-        Ticket ticket = new Ticket(parkingSlot,timeStamp,vehicle);
+    public Parking_Ticket generateTicket(double timeStamp, Vehicle vehicle, Parking_Slot parkingSlot) {
+        Parking_Ticket ticket = new Ticket(parkingSlot,timeStamp,vehicle);
         parkingSlot.set_Status();
         return ticket;
     }

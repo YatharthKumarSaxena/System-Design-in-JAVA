@@ -1,7 +1,7 @@
 package Mini_Projects.Parking_Lot_Project.Gate_System;
 
 import Mini_Projects.Parking_Lot_Project.Parking_Lot_Elements.Parking_Area;
-import Mini_Projects.Parking_Lot_Project.Vehicles.Ticket;
+import Mini_Projects.Parking_Lot_Project.Vehicles.Parking_Ticket;
 
 // SRP is followed
 // Exit_Gate handles billing
@@ -33,8 +33,8 @@ public class Exit_Gate implements Exit_Gate_Interface{
 
     // Member Functions
     @Override
-    public double generateBill(Ticket ticket) {
-        double hour = ticket.get_timeStamp();
+    public double generateBill(Parking_Ticket ticket) {
+        double hour= ticket.get_timeStamp();
         ticket.get_ParkingSlot().reset_Status();
         return ticket.get_Vehicle().calculateRentalPrice(hour);
     }

@@ -1,16 +1,23 @@
 package Mini_Projects.Vehicle_Renting_System_Project.Vehicles;
 
+import Mini_Projects.Vehicle_Renting_System_Project.Vehicle_Renting_Elements.Vehicle_Slots;
+
 public class Car implements Vehicle{
 
     // Data Members
     private static int CarID;
     private int ID;
     private String Brand;
+    private int value;
+    private Vehicle_Slots slot;
 
-    public Car(String brand) {
+    // Parameterized Constructor
+    public Car(String brand,int value,Vehicle_Slots slot) {
         CarID++;
         this.ID = CarID;
-        Brand = brand;
+        this.Brand = brand;
+        this.value = value;
+        this.slot = slot;
     }
 
     // Static Initialization
@@ -30,17 +37,22 @@ public class Car implements Vehicle{
     }
 
     @Override
-    public int getAvailableQuantity() {
-        return CarID;
-    }
-
-    @Override
-    public double getChargePerKilometers(int kilometers) {
+    public double getChargePerKilometers(double kilometers) {
         return kilometers*50;
     }
 
     @Override
     public void displayVehicleCategory() {
         System.out.println("Vehicle Category is Car");
+    }
+
+    @Override
+    public Vehicle_Slots get_Slot() {
+        return this.slot;
+    }
+
+    @Override
+    public int getValue() {
+        return this.value;
     }
 }
