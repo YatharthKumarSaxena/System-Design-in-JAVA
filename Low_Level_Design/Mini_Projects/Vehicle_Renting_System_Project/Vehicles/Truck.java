@@ -10,6 +10,7 @@ public class Truck implements Vehicle{
     private String Brand;
     private int value;
     private Vehicle_Slots slot;
+    private int chargePerKilometers;
 
     // Parameterized Constructor
     public Truck(String brand,int value,Vehicle_Slots slot) {
@@ -18,6 +19,7 @@ public class Truck implements Vehicle{
         this.Brand = brand;
         this.value = value;
         this.slot = slot;
+        this.chargePerKilometers = 80;
     }
 
     // Static Initialization
@@ -38,7 +40,12 @@ public class Truck implements Vehicle{
 
     @Override
     public double getChargePerKilometers(double kilometers) {
-        return kilometers*80;
+        return kilometers*chargePerKilometers;
+    }
+
+    @Override
+    public void setChargeAfterDiscount(double discount) {
+        this.chargePerKilometers *= discount;
     }
 
     @Override

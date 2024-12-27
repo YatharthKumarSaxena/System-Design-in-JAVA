@@ -41,6 +41,7 @@ public class Exit_Gate implements Bill_Gate{
     @Override
     public double generateBill(Renting_Ticket ticket) {
         double distance = ticket.get_disStamp();
+        ticket.get_Vehicle().get_Slot().reset_Status();     // Set Status of Vehicle as Available
         double rent = ticket.get_Vehicle().getChargePerKilometers(distance);
         return rent;
     }

@@ -1,7 +1,7 @@
 package Mini_Projects.Vehicle_Renting_System_Project.User_Database;
 
 
-import Mini_Projects.Vehicle_Renting_System_Project.Vehicle_Renting_Elements.Ticket;
+import Mini_Projects.Vehicle_Renting_System_Project.Vehicle_Renting_Elements.Renting_Ticket;
 
 public class Customer implements Customer_Interface {
 
@@ -10,10 +10,10 @@ public class Customer implements Customer_Interface {
     private static int Cus_ID;
     private int ID;
     private String phoneNumber;
-    private Ticket ticket;
+    private Renting_Ticket ticket;
 
     // Private Parameterized Constructor
-    public Customer(String name, String phoneNumber , Ticket ticket) {
+    public Customer(String name, String phoneNumber , Renting_Ticket ticket) {
         this.name = name;
         Cus_ID++;
         this.ID = Cus_ID;
@@ -48,7 +48,7 @@ public class Customer implements Customer_Interface {
     }
 
     @Override
-    public Ticket get_Ticket() {
+    public Renting_Ticket get_Ticket() {
         return this.ticket;
     }
 }
