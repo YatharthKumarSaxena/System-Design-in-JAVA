@@ -40,7 +40,7 @@ public class Bike implements Vehicle{
 
     @Override
     public double getChargePerKilometers(double kilometers) {
-        return kilometers*chargePerKilometers;
+        return kilometers*this.chargePerKilometers;
     }
 
     @Override

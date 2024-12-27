@@ -1,6 +1,8 @@
 package Mini_Projects.Vehicle_Renting_System_Project;
 
+import Mini_Projects.Vehicle_Renting_System_Project.Vehicle_Renting_Elements.Address;
 import Mini_Projects.Vehicle_Renting_System_Project.Vehicle_Renting_Elements.Renting_House_Interface;
+import Mini_Projects.Vehicle_Renting_System_Project.Vehicles.Vehicle;
 
 import java.util.List;
 
@@ -53,11 +55,11 @@ public class Vehicle_Renting_Company {
         }
 
         public String getName() {
-            return name;
+            return this.name;
         }
 
         public List<Renting_House_Interface> getRentingHouses() {
-            return rentingHouses;
+            return this.rentingHouses;
         }
 
         public int getNumberOfEmptySlots() {
@@ -82,5 +84,13 @@ public class Vehicle_Renting_Company {
 
         public void get_Rating(){
             System.out.println("Our "+this.name+" has a rating of "+ 4.1+"/"+5);
+        }
+
+        public int get_TotalValue(){
+            int totalValue = 0;
+            for(Renting_House_Interface rentingHouse : rentingHouses){
+                totalValue += rentingHouse.getValue();
+            }
+            return totalValue;
         }
     }

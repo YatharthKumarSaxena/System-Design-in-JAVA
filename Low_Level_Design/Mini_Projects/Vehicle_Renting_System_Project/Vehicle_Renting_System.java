@@ -47,16 +47,16 @@ public class Vehicle_Renting_System {
         System.out.println();
 
         // Making List of Parking Slots
-        List<Vehicle_Slots> slots1 = new ArrayList<>();
-        List<Vehicle_Slots> slots2 = new ArrayList<>();
-        slots1.add(slot1);
-        slots1.add(slot4);
-        slots2.add(slot2);
-        slots2.add(slot3);
+        List<Vehicle> vehicles1 = new ArrayList<>();
+        List<Vehicle> vehicles2 = new ArrayList<>();
+        vehicles1.add(B1);
+        vehicles2.add(C1);
+        vehicles2.add(T1);
+        vehicles1.add(A1);
 
         // Initializing Parking Area
-        Renting_House_Interface area1 = new Renting_House(slots1,AD1);
-        Renting_House_Interface area2 = new Renting_House(slots2,AD2);
+        Renting_House_Interface area1 = new Renting_House(vehicles1,AD1);
+        Renting_House_Interface area2 = new Renting_House(vehicles2,AD2);
 
         System.out.println("Renting House Areas ID :- ");
         System.out.println("ID for area1 :- "+area1.get_ID());
@@ -69,12 +69,12 @@ public class Vehicle_Renting_System {
         areas.add(area2);
 
         // Initializing Parking_Lot_Company
-        Vehicle_Renting_Company P = Vehicle_Renting_Company.getInstance("EasyRent",areas);
+        Vehicle_Renting_Company V = Vehicle_Renting_Company.getInstance("EasyRent",areas);
 
         System.out.println("Status After Initializing Slots :- ");
-        System.out.println("Total number of Empty Slots in "+P.getName()+" = "+P.getNumberOfEmptySlots());
-        System.out.println("Total number of Filled Slots in "+P.getName()+" = "+P.getNumberOfFilledSlots());
-        System.out.println("Total number of Slots in "+P.getName()+" = "+P.getTotalSlots());
+        System.out.println("Total number of Empty Slots in "+V.getName()+" = "+V.getNumberOfEmptySlots());
+        System.out.println("Total number of Filled Slots in "+V.getName()+" = "+V.getNumberOfFilledSlots());
+        System.out.println("Total number of Slots in "+V.getName()+" = "+V.getTotalSlots());
         System.out.println();
 
         // Initializing Entry Gates
@@ -89,7 +89,7 @@ public class Vehicle_Renting_System {
         // Initializing Customer Tickets
         Renting_Ticket t2 = EnGate2.generateTicket(10,C1);
         Renting_Ticket t3 = EnGate2.generateTicket(10,T1);
-        Renting_Ticket t4 = EnGate2.generateTicket(10,A1);
+        Renting_Ticket t4 = EnGate1.generateTicket(10,A1);
 
         System.out.println("Ticket ID for each ticket "+"Ticket2 = "+t2.get_TicketID());
         System.out.println("Ticket ID for each ticket "+"Ticket3 = "+t3.get_TicketID());
@@ -97,9 +97,9 @@ public class Vehicle_Renting_System {
         System.out.println();
 
         System.out.println("Status After Initializing Tickets");
-        System.out.println("Total number of Empty Slots in "+P.getName()+" = "+P.getNumberOfEmptySlots());
-        System.out.println("Total number of Filled Slots in "+P.getName()+" = "+P.getNumberOfFilledSlots());
-        System.out.println("Total number of Slots in "+P.getName()+" = "+P.getTotalSlots());
+        System.out.println("Total number of Empty Slots in "+V.getName()+" = "+V.getNumberOfEmptySlots());
+        System.out.println("Total number of Filled Slots in "+V.getName()+" = "+V.getNumberOfFilledSlots());
+        System.out.println("Total number of Slots in "+V.getName()+" = "+V.getTotalSlots());
         System.out.println();
 
         // Initializing Users
@@ -114,13 +114,13 @@ public class Vehicle_Renting_System {
         // Initializing the VIP Ticket
         Renting_Ticket ticket1 = new VIP_Ticket(10,B1,user1);
 
-        System.out.println("VIP Ticket ID for each ticket "+"Ticket1 = "+ticket1.get_TicketID());
+        System.out.println("VIP Ticket ID for "+"Ticket1 = "+ticket1.get_TicketID());
         System.out.println();
 
         System.out.println("Status After Initializing Users especially an Employee");
-        System.out.println("Total number of Empty Slots in "+P.getName()+" = "+P.getNumberOfEmptySlots());
-        System.out.println("Total number of Filled Slots in "+P.getName()+" = "+P.getNumberOfFilledSlots());
-        System.out.println("Total number of Slots in "+P.getName()+" = "+P.getTotalSlots());
+        System.out.println("Total number of Empty Slots in "+V.getName()+" = "+V.getNumberOfEmptySlots());
+        System.out.println("Total number of Filled Slots in "+V.getName()+" = "+V.getNumberOfFilledSlots());
+        System.out.println("Total number of Slots in "+V.getName()+" = "+V.getTotalSlots());
         System.out.println();
 
         user2.display_Category();
@@ -142,23 +142,25 @@ public class Vehicle_Renting_System {
 
         // Generating Bills for each Customer
         double Bill1 = ExGate1.generateBill(ticket1);
-        double Bill2 = ExGate2.generateBill(t3);
-        double Bill3 = ExGate2.generateBill(t4);
+        double Bill2 = ExGate2.generateBill(t2);
+        double Bill3 = ExGate2.generateBill(t3);
         double Bill4 = ExGate1.generateBill(t4);
 
         System.out.println("Status after generating Bill of Customers");
-        System.out.println("Total number of Empty Slots in "+P.getName()+" = "+P.getNumberOfEmptySlots());
-        System.out.println("Total number of Filled Slots in "+P.getName()+" = "+P.getNumberOfFilledSlots());
-        System.out.println("Total number of Slots in "+P.getName()+" = "+P.getTotalSlots());
+        System.out.println("Total number of Empty Slots in "+V.getName()+" = "+V.getNumberOfEmptySlots());
+        System.out.println("Total number of Filled Slots in "+V.getName()+" = "+V.getNumberOfFilledSlots());
+        System.out.println("Total number of Slots in "+V.getName()+" = "+V.getTotalSlots());
         System.out.println();
 
-        System.out.println("Bill generated for each customer given below");
+        System.out.println("Bill generated for each customer and employee given below");
         System.out.println("Amount paid by "+user1.get_Name()+" = "+Bill1);
         System.out.println("Amount paid by "+user2.get_Name()+" = "+Bill2);
         System.out.println("Amount paid by "+user3.get_Name()+" = "+Bill3);
         System.out.println("Amount paid by "+user4.get_Name()+" = "+Bill4);
         System.out.println();
 
-        P.get_Rating();
+        System.out.println("Total value of all Vehicles in "+V.getName()+" = "+V.get_TotalValue());
+        System.out.println();
+        V.get_Rating();
     }
 }

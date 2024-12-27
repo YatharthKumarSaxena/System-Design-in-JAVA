@@ -40,12 +40,12 @@ public class Car implements Vehicle{
 
     @Override
     public double getChargePerKilometers(double kilometers) {
-        return kilometers*chargePerKilometers;
+        return kilometers*this.chargePerKilometers;
     }
 
     @Override
     public void setChargeAfterDiscount(double discount) {
-        this.chargePerKilometers += discount;
+        this.chargePerKilometers *= discount;
     }
 
     @Override

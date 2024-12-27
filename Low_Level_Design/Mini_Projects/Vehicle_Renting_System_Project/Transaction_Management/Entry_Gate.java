@@ -41,9 +41,9 @@ public class Entry_Gate implements Ticket_Gate{
     }
 
     @Override
-    public Renting_Ticket generateTicket(double timeStamp, Vehicle vehicle) {
+    public Renting_Ticket generateTicket(double disStamp, Vehicle vehicle) {
         vehicle.get_Slot().set_Status();    // Set Status of Vehicle as Unavailable
-        Renting_Ticket ticket = new Ticket(timeStamp,vehicle);
+        Renting_Ticket ticket = new Ticket(disStamp,vehicle);
         return ticket;
     }
 }

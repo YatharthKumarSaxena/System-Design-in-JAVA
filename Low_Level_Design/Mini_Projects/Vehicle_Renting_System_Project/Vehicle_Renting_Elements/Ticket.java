@@ -7,7 +7,7 @@ public class Ticket implements Renting_Ticket{
     // Data Members
     private static int ticketID;
     private int ID;
-    private double timeStamp;
+    private double disStamp;
     private Vehicle vehicle;
 
 
@@ -20,7 +20,7 @@ public class Ticket implements Renting_Ticket{
     public Ticket(double disStamp, Vehicle vehicle) {
         ticketID++;
         this.ID = ticketID;
-        this.timeStamp = timeStamp;
+        this.disStamp = disStamp;
         this.vehicle = vehicle;
     }
 
@@ -37,6 +37,6 @@ public class Ticket implements Renting_Ticket{
 
     @Override
     public double get_disStamp() {
-        return this.timeStamp;
+        return this.disStamp;
     }
 }
