@@ -1,5 +1,9 @@
 package Mini_Projects.Vehicle_Renting_System_Project.User_Database;
 
+// This interface helps in implementing customer and employee interface
+// DRY Principle is followed to minimize code redundancy
+/* SRP is followed */
+
 public interface User {
     // Methods of User
     void display_Category();

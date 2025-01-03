@@ -1,5 +1,8 @@
 package Mini_Projects.Vehicle_Renting_System_Project.Vehicle_Renting_Elements;
 
+// Single Responsibility Principle is followed
+// This class is holding single responsibility of displaying address details
+
 public class Address_Of_Renting_House implements Address{
 
     // Data Members

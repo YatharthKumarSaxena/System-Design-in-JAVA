@@ -4,15 +4,15 @@ import Mini_Projects.Vehicle_Renting_System_Project.Vehicles.Vehicle;
 
 import java.util.List;
 
+/* Use of Composite Design Pattern as Renting_House consist of collection of Vehicles
+ * This treats the collection of vehicles as Single Entity
+ * If we have different type of Vehicles then they are treated as Single Entity */
+
 public class Renting_House implements Renting_House_Interface{
 
     // Data Members
     private static int Area_ID;
     private int ID;
-    // In future if we make Special Slots then they come in category of Parking_Slot
-    // So We do not have to worry about calculating their empty and filled slots separately
-    // Example there may be special slots for Electric Vehicles
-    // In this way LSP helps us
     private List<Vehicle> vehicles;
     private Address address;
 

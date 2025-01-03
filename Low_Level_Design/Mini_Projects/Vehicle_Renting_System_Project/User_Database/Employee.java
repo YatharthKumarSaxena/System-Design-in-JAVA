@@ -1,6 +1,7 @@
 package Mini_Projects.Vehicle_Renting_System_Project.User_Database;
 
-import Mini_Projects.Vehicle_Renting_System_Project.Vehicle_Renting_Elements.Renting_Ticket;
+/* SRP is followed */
+// DRY principle is followed
 
 public class Employee implements Employee_Interface{
 

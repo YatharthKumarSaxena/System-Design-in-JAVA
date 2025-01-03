@@ -3,6 +3,8 @@ package Mini_Projects.Vehicle_Renting_System_Project.Vehicle_Renting_Elements;
 import Mini_Projects.Vehicle_Renting_System_Project.User_Database.Employee_Interface;
 import Mini_Projects.Vehicle_Renting_System_Project.Vehicles.Vehicle;
 
+// SRP is followed
+
 public class VIP_Ticket implements Renting_Ticket{
 
     // Data Members
