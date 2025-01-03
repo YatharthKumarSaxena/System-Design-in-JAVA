@@ -2,6 +2,10 @@ package Mini_Projects.Vehicle_Renting_System_Project.Vehicles;
 
 import Mini_Projects.Vehicle_Renting_System_Project.Vehicle_Renting_Elements.Vehicle_Slots;
 
+// SRP is followed
+// Open Closed Principle is followed here
+// As we can create other classes like taxi,scooter etc. without modifying the code
+
 public class Bike implements Vehicle{
 
     // Data Members

@@ -1,4 +1,4 @@
-# 🛒 Welcome to the Vehicle Renting System Project!
+# 🛒 Welcome to the Vehicle_Renting_Elements of Vehicle Renting System Project!
 > **I'm the README.md file of this folder, here to guide you step-by-step!** 🚀
 
 ## 📖 **Table of Contents**
@@ -8,7 +8,7 @@
 - [🎯 Final Takeaway](#-final-takeaway)
 
 ## 📖 **Introduction**
-This project simulates a **Vehicle Renting System**, where users can rent vehicles from various renting houses, with features such as managing vehicle availability, generating tickets, and applying discounts for VIP users.
+This Folder simulates a **Vehicle Renting System**, where users can rent vehicles from various renting houses, with features such as managing vehicle availability, generating tickets, and applying discounts for VIP users.
 
 The system focuses on modularity, scalability, and flexibility. It is built using Object-Oriented Programming (OOP) principles and practices.
 

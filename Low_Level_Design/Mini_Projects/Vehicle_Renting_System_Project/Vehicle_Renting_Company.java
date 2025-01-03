@@ -1,8 +1,6 @@
 package Mini_Projects.Vehicle_Renting_System_Project;
 
-import Mini_Projects.Vehicle_Renting_System_Project.Vehicle_Renting_Elements.Address;
 import Mini_Projects.Vehicle_Renting_System_Project.Vehicle_Renting_Elements.Renting_House_Interface;
-import Mini_Projects.Vehicle_Renting_System_Project.Vehicles.Vehicle;
 
 import java.util.List;
 
@@ -11,16 +9,16 @@ import java.util.List;
 
 // SRP is followed
 
-/* Use of Composite Design Pattern as Parking_Lot consist of collection of Parking Area
- * This treats the collection of Parking Areas as Single Entity
- * If we have different type of Parking Areas then they are treated as Single Entity */
+/* Use of Composite Design Pattern as Company consist of collection of Renting Houses
+ * This treats the collection of Renting Houses as Single Entity
+ * If we have different type of Renting Houses then they are treated as Single Entity */
 
 // Use of LSP is done here
 
-/* If we create additional types of Parking_Area (e.g., PremiumArea, VIPArea),
- * as long as they implement the Parking_Area interface, they can be added to the
- * Parking_Lot_Company without breaking any existing functionality. This is a direct
- * application of LSP: new types of parking areas can be substituted into the system
+/* If we create additional types of Renting Houses (e.g., PremiumHouse, VIPHouse),
+ * as long as they implement the Renting_House interface, they can be added to the
+ * Vehicle_Renting_Company without breaking any existing functionality. This is a direct
+ * application of LSP: new types of Renting House can be substituted into the system
  * without modifying the existing code. */
 
 public class Vehicle_Renting_Company {
